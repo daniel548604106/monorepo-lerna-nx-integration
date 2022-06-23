@@ -1,0 +1,38 @@
+
+ >  Lerna (powered by Nx)   Running target build for 3 project(s):
+
+    - footer
+    - header
+    - remixapp
+
+ 
+
+> footer:build
+
+
+> footer@0.0.0 build
+> rm -rf dist && rollup --config
+
+sh: rollup: command not found
+
+> header:build
+
+
+> header@0.0.0 build
+> rm -rf dist && rollup --config
+
+sh: rollup: command not found
+
+ 
+
+ >  Lerna (powered by Nx)   Running target "build" failed
+
+   Tasks not run because their dependencies failed or --nx-bail=true:
+   
+   - remixapp:build
+   
+   Failed tasks:
+   
+   - footer:build
+   - header:build
+
